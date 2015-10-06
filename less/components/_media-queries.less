@@ -1,0 +1,135 @@
+/* = Media Queries
+-------------------------------------------------------------- */
+@media (max-width: 991px){
+	.callHeader .textwidget{
+		width: 35%;
+	}
+
+	.container{
+		width: 100%;
+	}
+}
+
+@media (max-width: 880px) {
+	.callHeader .textwidget{
+		color: #fff;
+		background-color: @gibbon-orange;
+		background-image: url(images/large-leaf.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		border-top: 3px solid @blk;
+		position: static;
+		width: 100%;
+		height: 150px;
+	}
+	.callHeader .textwidget h1 {
+		font-size: 28px;
+		display: inline-block;
+		width: 50%;
+		margin: 15px;
+		margin-bottom: 0;
+	}
+	.callHeader .textwidget h2 {
+		font-size: 22px;
+		width: 50%;
+		display: inline-block;
+		margin: 15px;
+		margin-top: 0;
+	}
+	.callHeader .textwidget a.main.btn{
+		color: @gibbon-orange;
+		background-color: #fff;
+		position: relative;
+		top: -30px;
+		right: 15px;
+		text-shadow: none;
+		float: right;
+	}
+
+	.callHeader .textwidget a.main.btn:hover, .callHeader .textwidget a.main.btn:active, .callHeader .textwidget a.main.btn:visited{
+		color: @gibbon-orange;
+	}
+
+	.callHeader{
+		border-bottom: none;
+	}
+
+}
+
+@media (max-width: 768px){
+	
+
+	.site-header-inner{
+		margin:10px 5px;
+		float: none;
+	}
+
+	.navbar-collapse{
+		padding: 0;
+		border-top: 3px solid @blk;
+	}
+
+	.site-navigation-inner{
+		margin-top: 0;
+		padding: 0;
+	}
+	.navbar-header{
+		padding: 0 15px;
+	}
+
+	.site-navigation-inner, .navbar-nav{
+		float: none;
+		clear: both;
+		margin: 0;
+	}
+
+	ul.navbar-nav > li{
+		border-bottom: 1px solid #c9c9c9;
+	}
+
+	ul.navbar-nav > li:last-child{
+		border-bottom: none;
+	}
+
+	.callHeader h1{
+		font-size: 28px;
+	}
+
+	.callHeader h2{
+		font-size: 22px;
+	}
+
+	.header.container{
+		padding: 0;
+	}
+
+}
+
+@media (max-width: 640px) {
+	.widget-sub-header.video .vid-cont{
+		width:100%x;
+	}
+
+	.site-info{
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 480px) {
+	.callHeader .textwidget{
+		height: 120px;
+	}
+
+	.callHeader .textwidget h1{
+		font-size: 18px;
+	}
+
+	.callHeader .textwidget h2{
+		font-size: 14px;
+	}
+
+	.callHeader .textwidget a{
+		font-size: 14px;
+	}
+
+}

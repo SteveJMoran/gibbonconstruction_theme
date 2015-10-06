@@ -1,0 +1,154 @@
+.single-project.has-gallery .gallery {
+	width: 100%;
+	a {
+		float: left;
+		width: 50%;
+		padding: 0 10px;
+		margin: 10px 0;
+		max-height: 260px;
+		overflow: hidden;
+		box-sizing: border-box;
+
+	}
+}
+
+.single-project .project-testimonial blockquote {
+	border: none;
+	&.testimonials-text:after {
+		border-color: #f2f2f2 transparent transparent transparent;
+	}
+}
+
+.single-project .project {
+	h1 {
+		font-size: 42px;
+	}
+
+
+	.summary.entry-summary {
+		margin: 20px 0;
+		padding: 0;
+		.categories h3, .client {
+			display: none;
+		}
+		ul.single-project-categories {
+			padding: 16px;
+			margin: 10px 0;
+			overflow: auto;
+			background-color: #f6f6f6;
+			li {
+				float: left;
+				&:before {
+					content: '/';
+					margin: 0 6px;
+					vertical-align: baseline;
+					font-family: inherit;
+
+				}
+				&:first-child:before {
+					content: '';
+				}
+			a {
+				font-size: 16px;
+			}
+			}
+
+		}
+	}
+}
+
+.projects-page ul.projects li.project {
+	h3 {
+		margin: 0 0 12px;
+	}
+	.project-thumbnail {
+		margin-right: 20px;
+		width: 33.33333%;
+	}
+}
+
+.project.type-project {
+	
+	.single-featured {
+		display: none;
+	}
+	h1.project_title {
+		display: none;
+	}
+
+	.summary {
+		  width: 100%;
+		  overflow: hidden;
+		  padding: 10px;
+		  margin: 0;
+	}
+
+
+}
+
+ul.projects_list_widget {
+	padding: 0;
+	list-style: none;
+	li {
+		overflow: auto;
+		margin-bottom: 5px;
+	}
+
+}
+
+.projects_categories_list_widget li.current-cat > a {
+	font-weight: bold;
+
+}
+
+.site-footer ul.projects_list_widget li img {
+		display: none;
+	}
+.projects ul.projects li.project, .projects-page ul.projects li.project {
+	width: 100%;
+	margin-right: 0;
+	margin: 16px 0;
+	border-bottom: 1px solid #f6f6f6;
+
+}
+
+
+.sidebar, .main-content {
+	.projects_list_widget li a,  .projects li a figure {
+		max-height: 220px;
+		overflow: hidden;
+		position: relative;
+		float: left;
+
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
+		&:hover:after {
+			content: 'See Project';
+			.btn-style(@brand-primary, #aaa);
+
+			position: absolute;
+			display: block;
+			margin: 0 auto;
+			top: 40%;
+			left: 30%;
+  			width: 40%;
+  			text-align: center;			
+  			padding: 6px 12px;
+			color: #000
+		}
+
+		&:hover:before{
+			content: '';
+			background-color: rgba(255,255,255,0.3);
+			position: absolute;
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+		.project-title {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+.metaslider {
+	.slides {
+		.caption-wrap {
+			min-height: 150px;
+			opacity: 1;
+			width: 55%;
+			background-color: rgba(255,255,255,0.85);
+			margin-bottom: 90px;
+			border-top-right-radius: 500px;
+	  		border-bottom-right-radius: 500px;
+	  		.caption {
+	  			color: #000;
+	  			padding: 20px 60px 20px;
+	  			h2, h3 {
+	  				margin: 0;
+	  				font-weight: 300;
+	  			}
+	  			.btn {
+	  				margin-top: 16px;
+	  			}
+	  		}
+		}
+	}
+}
+
+@media (max-width: @screen-lg) {
+	.metaslider {
+		.slides {
+			.caption-wrap {
+				width: 65%;
+				.caption {
+					padding: 10px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: @screen-md) {
+	.metaslider {
+		.slides {
+			.caption-wrap {
+				width: 100%;
+				margin-bottom: -30px;
+				border-radius: 0; 
+				.caption {
+					padding: 10px;
+				}
+			}
+		}
+	}
+}

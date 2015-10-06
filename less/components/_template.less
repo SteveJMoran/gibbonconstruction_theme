@@ -1,0 +1,101 @@
+/* = Page Template Styles
+-------------------------------------------------------------- */
+article.page, article.post, .archive .project{
+	margin: 38px 0;
+	overflow: auto;
+}
+
+.main-content {
+	position: relative;
+}
+
+.single header h1.page-title, .single header .byline, .page header h1.page-title, .projects h1.page-title, .entry-content-thumbnail {
+	display: none;
+	visibility: hidden;
+}
+
+header.page-header {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.85);
+	top: -80px;
+  	height: 80px;
+  	width: 100%;
+  	h1 {
+  		margin: 10px 0;
+  		font-weight: 300;
+  	}
+
+}
+
+.page-header{
+	border-left: 2px solid @gibbon-orange;
+	border-bottom: none;
+	margin: 0;
+	padding: 0;
+}
+
+.blog-title {
+	border-left: 2px solid @gibbon-orange;
+	padding-left: 6px;
+
+}
+
+.featImg{
+	max-width: 100% !important;
+	height: auto !important;
+}
+
+.home .page-header h1 {
+	display: none;
+}
+
+.img-cont {
+	.img-crop(160px);
+}
+
+ul.service-categories  {
+	padding: 0;
+	list-style: none;
+
+	> li {
+		ul {
+			padding: 0;
+			list-style: none;
+			
+			li {
+				font-size: 18px;
+				font-weight: 300px;
+				padding-bottom: 20px;
+
+				&:first-child {
+					color: @brand-primary;
+				}
+
+			}
+		}
+
+		p.excerpt {
+			min-height: 150px;
+		}
+
+	}
+}
+
+.blog {
+	article header {
+		border-left: 2px solid @brand-primary;
+		padding-left: 6px;
+		h1 a {
+			color: #000;
+			font-weight: 300;
+			text-decoration: none;
+		}
+		.byline {
+			display: none;
+		}
+	}
+}
+
+/* = Post Template Styles
+-------------------------------------------------------------- */
+

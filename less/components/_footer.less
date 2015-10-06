@@ -1,0 +1,107 @@
+
+
+/* = Footer Styles
+-------------------------------------------------------------- */
+
+footer {
+	.footer-menu {
+		.menu {
+			list-style: none;
+			padding-left: 0;
+			li a {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.site-footer{
+	background-color: @blk;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-top: 3px solid @gibbon-orange;
+	margin-top: 40px;
+	position: relative;
+	
+	.copyright {
+		width: 100%;
+		background-color: @brand-primary;
+		text-align: center;
+		font-size: @font-size-lg;
+		padding: 8px 0;
+
+	}
+	
+	h2 {
+		font-size: 24px;
+		color: @brand-primary;
+	}
+
+	h3 {
+		color: @brand-primary;
+	}
+	
+	h4 a {
+	
+	}
+	ul{
+		list-style-type: none;
+		padding-left: 0;
+		li a{
+			color: #fff;
+		}
+	}
+
+	
+}
+.contact {
+	list-style: none;
+	padding: 0;
+		li {
+			font-size: 18px;
+			padding-left: 25px;
+			color: #fff;
+			line-height: 1.6em;
+			position: relative;
+			&:before {
+				content: '';
+				font-family: 'FontAwesome';
+				color: @gibbon-orange;
+				padding: 5px 10px 5px 0;
+				position: absolute;
+				left: 0;
+				top: -5px;
+				display: block;
+				text-align: center;
+				width: 30px;
+				
+			}
+			&.tel:before {
+				content: '\f098';
+			}
+			&.email:before {
+				content: '\f199';
+			}
+			&.address:before {
+				content: '\f041';
+			}
+		}
+
+	}
+
+.site-footer .contact-box{
+	padding: 15px;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 6px;
+}
+
+.contact-box .glyphicon{
+	margin-right: 10px;
+}
+
+
+#footer-left-widget p {
+	color: #fff;
+}
+
+

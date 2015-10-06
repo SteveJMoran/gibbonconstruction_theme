@@ -1,0 +1,46 @@
+.testimonials-text {
+	position: relative;
+	font-style: oblique;
+	font-weight: 300;
+	border: none;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border: none;
+	&:before {
+		content: "";
+		display: block;
+		border: 10px solid #f2f2f2;
+		border-color: #f2f2f2 transparent transparent transparent;
+		position: absolute;
+		bottom: -20px;
+		left: 1em;
+	}
+	
+
+
+}
+
+div.quote {
+	margin-bottom: 20px;
+	clear: both;
+	&:nth-child(2){
+		.testimonials-text:before {
+			left: auto;
+			right: 1em;
+		}
+		cite.author {
+			float: right;
+			margin-bottom: 20px;
+		}
+	}
+	cite .title {
+		display: block;
+	}
+}
+.site-footer .testimonials-text{
+	background-color: transparent;
+	color: #fff;
+	&:before { 
+		display: none;
+	}
+}

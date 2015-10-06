@@ -1,0 +1,77 @@
+
+/* = Admin Styles
+-------------------------------------------------------------- */
+.edit-link {
+	clear: both;
+	display: block;
+}
+/* = General Styles
+-------------------------------------------------------------- */
+a {
+	color: @gibbon-orange;
+	
+	&:hover, &:focus {
+		color: @gibbon-orange;
+	}
+}
+
+iframe, object, embed {
+        max-width: 100%;
+}
+
+.entry-summary, .entry-content {
+	margin: 20px 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	//font-family: 'Helvetica', Arial, sans-serif;
+	font-weight: light;
+}
+
+h1 {
+	font-size: @font-sz-h1;
+}
+h2 {
+	font-size: @font-sz-h2;
+}
+h3 {
+	font-size: @font-sz-h3;
+}
+h4 {
+	font-size: @font-sz-h4;
+}
+
+//WP styles
+.alignright {
+	float: right;
+	margin-left: 30px;
+}
+.alignleft {
+	float: left;
+	margin-right: 30px;
+}
+
+//Button Styles
+
+.btn,  {
+	border-radius: 0;
+	padding: 10px 12px;
+	margin: 10px 0;
+	min-width: 160px;
+	font-weight: 300;
+	
+	&.btn-primary {
+		color: #000;
+		.btn-style(@brand-primary, #aaa);
+		
+	}
+}
+.wpcf7-submit {
+	color: #000;
+	.btn-style(@brand-primary, #aaa);
+}
+
